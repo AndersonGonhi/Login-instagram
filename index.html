@@ -7,6 +7,7 @@
 
     <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="./assets/js/main.js" defer></script>
 
 
     <title>Instagram</title>
@@ -30,8 +31,8 @@
                     <img src="./assets/images/logo.png" alt="">
                 </figure>
                 <form action="">
-                    <input type="email" required="true" name="" id="" placeholder="Telefone, nome de usuário ou email">
-                    <input type="password" name="" id="" placeholder="Senha">
+                    <input onblur="verify()" type="email" required="true" name="" id="email" placeholder="Telefone, nome de usuário ou email">
+                    <input onblur="verify()" type="password" name="" id="password" placeholder="Senha">
                 </form>
                 <button>Entrar</button>
 
